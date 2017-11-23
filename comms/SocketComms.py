@@ -25,7 +25,7 @@ def socketClient(host, port, stringOfnameValuePairs):
 
     address = (host, port)
     conn = Client(address, authkey='secret password')
-    conn.send("val:10")
+    conn.send("stringOfnameValuePairs")
     conn.close()
 
 if __name__ == '__main__':
